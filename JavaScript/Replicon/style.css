@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: Poppins;
+    font-weight:medium;
+    font-size: 15px;
+    color: #000000;
+    overflow: hidden;
+}
+nav ul{
+    float: right;
+    list-style-type: none;
+    margin-right: 129px;
+}
+nav ul li{
+    display: inline-block;
+    top: 37px;
+}
+nav ul li a{
+    color: #000000;
+     padding: 37px 20px; 
+    display: block;
+     font-weight: 575;
+    text-decoration: none;
+}
+.logo img{
+    float: left;
+    padding: 20px 20px;
+    top: 24px;
+    margin-left: 160px;
+    width: 191px;
+    height: 43px;
+
+}
+.box{ 
+    display: flex;
+} 
+.container{
+    margin-top: 193px;
+}
+.container h1{
+    top: 297px;
+    margin-left: 199px;
+    width: 610px;
+    height: 79px;
+    text-align: left;
+    color: #000000;
+    font: normal normal medium 48px/58px Poppins;
+}
+.container p{
+margin-left: 200px;
+width: 580px;
+height: 130px; 
+text-align: left;
+font: normal normal normal 20px/31px Proxima Nova;
+size: 20px;
+color: #000000;
+line-height: 31px;
+}
+.contact{
+    margin: 193px 231px;
+}
+.contact h1{
+    text-align: center;
+}
+.contact form{
+    display: flex;
+    flex-direction: column;
+    margin:1rem;
+    align-items: center;
+    
+}
+.contact form input{
+    
+    width: 411px;
+    padding: 0.5rem;
+    margin-top: 1.2rem;
+    margin-right: 1rem;
+    
+}
+.contact form textarea{
+    margin-top: 1.2rem;
+    width: 424px;
+    padding: 0.5rem;
+}
+.contact form button{
+    margin-top: 1.5rem;
+    height:43px ;
+    width: 186px;
+    background-color:#26D293 ;
+    border-radius: 1.6rem;
+    border: none;
+    color: #fff;
+    font-size:16px ;
+}
+footer p{
+    text-align: center;
+    padding: 1rem;
+    color:#000000;
+}
+

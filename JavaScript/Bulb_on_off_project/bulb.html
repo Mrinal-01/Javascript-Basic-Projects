@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bulb_on_off</title>
+    <link rel="stylesheet" href="./bulb.css">
+</head>
+<body>
+    <h1 id="bulbdata">Light OFF</h1>
+    <main class="lightapp">
+        <figure class="lightstyle">
+            <img src="white.png" alt="" id="light1">
+        </figure>
+
+        <figure class="lightstyle">
+            <img src="white.png" alt="" id="light2">
+            
+        </figure>
+
+        <figure class="lightstyle">
+            <img src="white.png" alt="" id="light3">
+            
+        </figure>
+
+        <figure class="lightstyle">
+            <img src="white.png" alt="" id="light4">
+            
+        </figure>
+
+        <figure class="lightstyle">
+            <img src="white.png" alt="" id="light5">
+            
+        </figure>
+    </main>
+    <div class="onoffbtn">
+        <label class="switch">
+            <input type="checkbox"><span class="slider" onclick=project()></span>
+        </label>
+    </div>
+    <script>
+        const project=()=>{
+            btext=document.getElementById("bulbdata");
+             for(x=1;x<=5;x=x+1)
+            {
+                let bid=document.getElementById("light"+x.toString());
+                if(bid.src.match("gold.png"))
+                {
+                    bid.src="white.png";
+                    btext.innerHTML="Light OFF";
+                    btext.style.color="black"
+                }
+                else
+                {
+                    bid.src="gold.png";
+                    console.log(bid);
+                    btext.innerHTML="Light ON";
+                    btext.style.color="green";
+                    
+                }
+            }
+        
+        }
+    </script>
+</body>
+</html>
